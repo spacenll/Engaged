@@ -1,0 +1,22 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#toggle-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none; /* منع تحديد الصورة */
+    -webkit-user-drag: none; /* منع سحب الصورة */
+}
