@@ -20,6 +20,9 @@ body, html {
     height: 100%;
     object-fit: cover; /* اجعل الصورة تغطي كامل الشاشة */
     cursor: pointer;
+-webkit-tap-highlight-color: transparent; /* لمتصفحات الويب على الأجهزة المحمولة */
+    touch-action: manipulation; /* تعطيل السلوك الافتراضي */
+    user-select: none; /* منع تحديد النص أو الصور
 }
 
 /* نمط للعداد */
@@ -38,3 +41,5 @@ body, html {
     font-size: 48px;
     font-family: Arial, sans-serif;
 }
+
+/* إزالة التظليل الأزرق عند النقرال
