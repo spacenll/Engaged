@@ -23,7 +23,18 @@
       --shadow: 0 24px 80px rgba(54, 42, 28, .11);
       --radius: 28px;
     }
+.time-columns {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  text-align: center;
+}
 
+/* خياري: إضافة خط فاصل بسيط بين العمودين */
+.time-columns p:first-child {
+  border-left: 1px solid #eee;
+  padding-left: 15px;
+}
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; overflow: hidden; }
     body {
@@ -735,11 +746,14 @@
           </article>
 
           <article class="event-card zoom-reveal">
-            <div class="icon">🕒</div>
-            <h3>الوقت</h3>
-            <p>بداية الفرحة<br><b>7:00 مساءً</b></p>
-            <p>دخول العريس<br><b>9:30 مساءً</b></p>
-          </article>
+  <div class="icon">🕒</div>
+  <h3>التوقيت</h3>
+  
+  <div class="time-columns">
+    <p>بداية الفرحة<br><b>7:00 مساءً</b></p>
+    <p>دخول العريس<br><b>9:30 مساءً</b></p>
+  </div>
+</article>
 
           <article class="event-card zoom-reveal">
             <div class="icon">📌</div>
